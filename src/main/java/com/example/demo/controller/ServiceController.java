@@ -12,10 +12,10 @@ import java.util.List;
 public class ServiceController {
 
     @Autowired
-    private CircuitBreakerService userService;
+    private CircuitBreakerService circuitBreakerService;
 
     @GetMapping
-    public List<ServiceInformation> showEmployees() {
-        return userService.showServiceInformation();
+    public List<ServiceInformation> listServiceInformation() {
+        return circuitBreakerService.showServiceInformation();
     }
 }

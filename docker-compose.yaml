@@ -1,0 +1,7 @@
+version: '3.2'
+
+services:
+  circuit-breaker-api:
+    image: upanshu21/circuit-breaker-api
+    ports:
+    - "8081:8081"
